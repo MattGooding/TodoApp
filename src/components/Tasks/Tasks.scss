@@ -1,0 +1,30 @@
+@import "./../../styles/variables.scss";
+
+.tasks-component {
+    padding: 1rem;
+
+
+    .clear-tasks {
+        display: flex;
+        align-items: flex-start;
+        margin: 1rem 0 0;
+        border: none;
+        background-color: $primary-color;
+        padding: 0.5rem 3rem 0.5rem 2.25rem;
+        border-radius: 5px;
+        color: #fff !important;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        svg {
+            font-size: 1rem;
+            margin-right: 0.5rem;
+            color: #fff;
+        }
+
+        &:hover {
+            color: $red-color;
+        }
+    }
+}

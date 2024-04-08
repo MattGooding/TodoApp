@@ -1,0 +1,74 @@
+@import "./../../styles/variables.scss";
+
+.form-component {
+  padding: 1rem;
+
+  .content {
+    border: solid 1px $gray-light-color;
+    border-radius: 10px;
+    padding: 2rem 2rem 2rem 0;
+    margin-top: 1rem;
+
+    .error-message {
+      background-color: $red-color;
+      color: #fff;
+      padding: 0.5rem;
+      margin: 0 0 2rem 2rem;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    label {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      margin-bottom: 1rem;
+
+      span {
+        display: block;
+        width: 7rem;
+        color: $gray-dark-color;
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: right;
+        margin-right: 1rem;
+      }
+
+      input,
+      select {
+        border: solid 1px $gray-color;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 0.5rem;
+        color: $gray-darker-color;
+        box-sizing: border-box;
+        flex: 1;
+        width: 100%;
+      }
+    }
+
+    button {
+      margin: 0 0 0 8rem;
+      background-color: $primary-color;
+      border: none;
+      padding: 0.5rem 3rem 0.5rem 2.25rem;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: .3s;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
+
+      svg {
+        font-size: 1.4rem;
+        margin-right: 0.75rem;
+        color: #ffffff;
+      }
+    }
+  }
+}

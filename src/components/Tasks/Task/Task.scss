@@ -1,0 +1,75 @@
+@import "./../../../styles/variables.scss";
+
+.task-component {
+	border: solid 1px $gray-light-color;
+	border-radius: 10px;
+	margin: 1rem 0 0 0;
+
+	.content {
+		padding: 1rem;
+		font-size: 1rem;
+		color: $gray-color;
+
+		h3 {
+			font-size: 1.7rem;
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+			color: $gray-darker-color;
+		}
+
+		div.id {
+			font-size: 0.9rem;
+			color: $gray-color;
+		}
+
+		div.status {
+			margin: 0.5rem 0 0;
+			color: $gray-dark-color;
+			font-size: 0.9rem;
+			font-weight: bold;
+
+			i,
+			u {
+				text-decoration: none;
+				font-style: normal;
+				margin-left: 0.5rem;
+				font-weight: normal;
+				font-size: 1rem;
+			}
+
+			u {
+				color: $green-color;
+			}
+		}
+	}
+
+	.control {
+		display: flex;
+		border-top: solid 1px $gray-light-color;
+
+		button {
+			display: flex;
+			align-items: center;
+			margin: 0 1rem;
+			padding: 0.5rem 0;
+			border: none;
+			background-color: transparent;
+			font-size: 1rem;
+			cursor: pointer;
+
+			svg {
+				font-size: 1.4rem;
+				margin-right: 0.5rem;
+			}
+
+			&.status {
+				color: $gray-darker-color;
+			}
+
+			&.remove {
+				color: $red-color;
+			}
+		}
+	}
+}
